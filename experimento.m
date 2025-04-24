@@ -1,11 +1,11 @@
-x = linspace(-2, 2, 1000);
-y = linspace(-2, 2, 1000);
+x = linspace(-10, 10, 1000);
+y = linspace(-10, 10, 1000);
 
 % Crear la malla de puntos (grid)
 [X, Y] = meshgrid(x, y);
 
 % Definir la función z
-f = @(x, y) (x + 2*y + 6)/(-3);
+f = @(x, y) sin(x) + sin(y);
 
 % Calcular Z para cada punto de la malla
 Z = f(X, Y);
